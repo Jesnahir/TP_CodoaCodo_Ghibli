@@ -209,7 +209,7 @@ a::after {
 }
 
 .contenedor_peliculas figure:last-child {
-    margin-right: 10px
+    margin-right: 5px
 }
 
 .contenedor_peliculas figure img{
@@ -236,8 +236,7 @@ a::after {
     visibility: visible;
 }
 .contenedor_peliculas figure:hover > .capa h3{
-    margin-top: 2px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     
 }
 .contenedor_peliculas figure:hover > img{
@@ -249,8 +248,8 @@ a::after {
     margin-bottom: 0px;
     transition: all 400ms ease-out;
      margin-top: 0px;
-     font-size: 20px;
-     padding: 10px;
+     font-size: 15px;
+     padding: 3px;
      text-align: center
 }
 .contenedor_peliculas figure .capa p{
@@ -261,7 +260,7 @@ a::after {
     max-width: 220px;
     margin: auto;
     margin-top: 10px;
-    text-align: center;
+    text-align: justify;
 }
 
 .container4 {
