@@ -125,11 +125,13 @@ a::after {
     background-color: rgba(36, 84, 132, 0.445);
     color: #fff;
     width: 90%;
-    height: 300px;
+    max-width: 600px;
+    height: auto;
     font-size: 15px;
     position: relative;
     top: -5px;
     margin-left: 20px;
+    margin: 0 20px;
   }
 
   .container_historia{
@@ -149,8 +151,9 @@ a::after {
     height: auto;
     position: relative;
     margin-left: 20px;
-    margin-right: 20px
-}
+    margin-right: 20px;
+    margin: 0 20px;
+  }
 
   .container3 {
     background-image: url("img/Studio\ ghibli.jpg");
@@ -175,6 +178,12 @@ a::after {
     grid-auto-rows: minmax(100px, auto);
     grid-column-gap: 200px;
 
+  }
+
+  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 100px);
+    }
   }
 
   .grid section{
