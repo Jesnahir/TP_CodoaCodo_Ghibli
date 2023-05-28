@@ -127,6 +127,7 @@ a::after {
     width: 90%;
     max-width: 600px;
     height: auto;
+    max-height: 600px;
     font-size: 15px;
     position: relative;
     top: -5px;
@@ -173,7 +174,7 @@ a::after {
     margin: 50px auto;
     font-size: 50px;
     display: grid;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(4, 70px);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     grid-column-gap: 200px;
@@ -182,7 +183,8 @@ a::after {
 
   @media (max-width: 600px) {
     .grid-container {
-      grid-template-columns: repeat(2, 100px);
+      grid-template-columns: repeat(2, minmax(70px, 1fr));
+      grid-column-gap: 10px;
     }
   }
 
@@ -196,9 +198,6 @@ a::after {
   .contenedor_peliculas{
     width: 100%;
     height: 90%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     text-align: center;
     justify-content: center
 
@@ -212,9 +211,7 @@ a::after {
     border-radius: 6px;
     box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
     margin-right: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    
 }
 
 .contenedor_peliculas figure:last-child {
@@ -225,9 +222,7 @@ a::after {
     width: 100%;
     height: 100%;
     transition: all 400ms ease-out;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+   
 }
 .contenedor_peliculas figure .capa{
     position: absolute;
